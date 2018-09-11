@@ -20,10 +20,10 @@ const calcTimeDifference = (startTime,endTime) => {
 };
 
 class RowObjectT1 {
-	constructor(date,start,finish,from,to,od_before,od_after,distance) {
+	constructor(start,finish,from,to,od_before,od_after,distance) {
 		let duration = calcTimeDifference(start,finish);
-		this.date = date;
-		this.start=start.toLocaleTimeString();
+		this.date = start.toLocaleDateString();
+		this.start = start.toLocaleTimeString();
 		this.finish = finish.toLocaleTimeString();
 		this.duration = duration[0].toString() + 'h ' +  duration[1].toString() + 'm';
 		this.from = from;
