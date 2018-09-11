@@ -1,0 +1,86 @@
+/*
+Base element styles
+*/
+
+body,input,header,h1 {
+	font-family:'Garamond';
+	background-color: #ddffd5;
+}
+
+header {
+	text-align: center;
+}
+
+h1 {
+	font-size: 2.5em;
+}
+
+table {
+	width: 80%;
+	margin: auto;
+	box-shadow: 0 2px 5px 0 grey;
+}
+
+table, tr {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 10px;
+}
+
+th, td {
+	width: 50%;
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 10px;
+}
+
+
+input[type='checkbox'] {
+	margin-left: 1.5em;
+	padding-top: 5em;
+}
+
+/*class elements*/
+
+.table-headers-part1 {
+	background-image: linear-gradient(to left, #f7d6ff,#cb8bd9 60%);
+	color: white;
+	font-family: 'Trebuchet MS';
+	text-shadow: 1px 1px 1px black;
+}
+
+.table-headers-part2 {
+	background-image: linear-gradient(to left, #d3ffed,#8adbbd 60%);
+	color: white;
+	font-family: 'Trebuchet MS';
+	text-shadow: 1px 1px 1px black;
+}
+
+.container-part1 {
+	padding: 20px 20px;
+	margin: 2em 10em 0 10em;
+	background-color: #c2e1ff;
+	border-radius: 10px;
+	box-shadow: 0 2px 5px 0 grey;
+}
+
+.container-part2 {
+	padding: 20px;
+	margin: 2em 10em 0 10em;
+	background-color: #c2e1ff;
+	border-radius: 10px;
+	box-shadow: 0 2px 5px 0 grey;
+}
+
+.top {
+	margin-bottom: 0px;
+}
+
+@media (min-width: 0) and (max-width: 679px) {
+	header {
+		padding: 2em 0;
+	}
+	 table {
+	 	width: 95%;
+	 }
+}
