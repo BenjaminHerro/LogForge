@@ -42,6 +42,10 @@ input[type='checkbox'] {
 
 /*class elements*/
 
+.user-inputs {
+	background-image: linear-gradient(to left, #f7d6ff,#cb8bd9 60%);
+}
+
 .table-headers-part1 {
 	background-image: linear-gradient(to left, #f7d6ff,#cb8bd9 60%);
 	color: white;
