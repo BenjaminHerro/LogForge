@@ -12,16 +12,23 @@
 		<h1 class='top'>Log Book</h1>
 		<span>For fucken danna</span>
 	</header>
-	<div class='user-inputs'>
-		<span>Enter your start place</span>
-		<input type='text' id='initialO'>
-		<span>Enter your start place</span>
-		<input type='date' id='startD'>
-		<span>Enter your start place</span>
-		<input type='time' id='startT' min="7:00" max="20:00">
-	</div>
+	<form class='init-form'>
+		<div class='start-input'>
+			<label for="origin">Origin</label>
+			<input type='text' id='originInp' placeholder="Enter your start place">
+		</div>
+		<div class='start-input'>
+			<label for="date">Start Date</label>
+			<input type='date' id='dateInp' placeholder="Enter your start date">
+		</div>
+		<div class='start-input'>
+			<label for="time">Start Time</label>
+			<input type='time' id='timeInp' placeholder="Enter your start time">
+		</div>
+		<input type = 'button' class='calc-button' value='Calculate'>
+	</form>
 	<div class='container-part1'>
-		<table class='main-table'>
+		<table class='main-table-part1'>
       		<!-- <input type="checkbox"> -->
 			<tr class='table-headers-part1'>
 				<th>Date</th>
@@ -37,19 +44,20 @@
 		</table>
 	</div>
 	<div class='container-part2'>
-		<table class='main-table'>
+		<table class='main-table-part2'>
       		<!-- <input type="checkbox"> -->
 			<tr class='table-headers-part2'>
 				<th>Road</th>
 				<th>Weather</th>
 				<th>Traffic</th>
-				<th>Signature</th>
-				<th>Name</th>
-				<th>Licence No.</th>
-				<th>Signature</th>
+				<th>Total Day Hours</th>
+				<th>Total Night Hours</th>
+				<th>Total Hours</th>
+				<th>Licence Number</th>
 			</tr>
 		</table>
 	</div>
+	<script src='js/jquery-3.3.1.min.js'></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAa0j9WxwkGaaqpXsbVXTibtn5dC-4yThE"></script>
 	<script src='suburbs.js'></script>
 	<script src='js/main.js'></script>

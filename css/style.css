@@ -2,9 +2,24 @@
 Base element styles
 */
 
+* {
+  box-sizing: border-box;
+}
+
 body,input,header,h1 {
 	font-family:'Garamond';
-	background-color: #ddffd5;
+	/*background-color: #ddffd5;*/
+}
+
+form {
+	margin: auto;
+	margin-top: 20px;
+	width: 50%;
+	padding: 10px;
+	/*padding: .875em 1.875em 1.875em;*/
+	background: #f2f2f2;
+	border-radius: 10px;
+	box-shadow: 0 2px 4px 0 grey;
 }
 
 header {
@@ -22,28 +37,93 @@ table {
 }
 
 table, tr {
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	border-collapse: collapse;
 	padding: 10px;
+	margin: auto;
 }
 
 th, td {
 	width: 50%;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	border-collapse: collapse;
 	padding: 10px;
 }
 
+tr:nth-child(even) {background-color: #f2f2f2;}
+tr:nth-child(odd) {background-color: white;}
 
 input[type='checkbox'] {
-	margin-left: 1.5em;
-	padding-top: 5em;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 5em;
 }
+
+input {
+	font-size: 1em;
+	font-weight: 500;
+	margin-bottom:20px;
+	padding: .8em;
+	border: 2px solid #c1deeb;
+	outline: none;
+	box-shadow: 0 2px 4px 0 grey;
+	border-radius: 10px;
+}
+
+input:focus {
+	background: #fff;
+	background-color:#F5F5F5;
+	transition: border-color .4s, background-color .4s;
+}
+
+label {
+	margin: 0 10px 5px 3.5px;
+	display:block;
+}
+
+
 
 /*class elements*/
 
-.user-inputs {
-	background-image: linear-gradient(to left, #f7d6ff,#cb8bd9 60%);
+#new-page-but {
+	display:block;
+}
+
+.calc-button {
+	color: #fff;
+	padding: .55em 1.25em;
+	background: #B5B5B5;
+	margin: auto;
+	margin-bottom: 15px;
+	display: block;
+	border-radius: 10px;
+}
+
+#new-origin {
+	display:block;
+}
+
+.next-inputs[type='button'] {
+	color: #fff;
+	padding: .55em 1.25em;
+	background: #B5B5B5;
+	display: inline;
+	border-radius: 10px;
+}
+
+.next-inputs[type='checkbox'] {
+	display: inline;
+	margin-left: 20px;
+} 
+
+.calc-button:hover, .next-inputs:hover {
+	background: #D2D1D1;
+}
+
+.start-input {
+	margin: auto;
+	width: 50%;
 }
 
 .table-headers-part1 {
@@ -60,18 +140,20 @@ input[type='checkbox'] {
 	text-shadow: 1px 1px 1px black;
 }
 
-.container-part1 {
+.container-part1,
+.user-inputs {
 	padding: 20px 20px;
 	margin: 2em 10em 0 10em;
-	background-color: #c2e1ff;
+	background-color: #DDEEED;
 	border-radius: 10px;
 	box-shadow: 0 2px 5px 0 grey;
 }
 
-.container-part2 {
+.container-part2,
+.new-buttons-div {
 	padding: 20px;
 	margin: 2em 10em 0 10em;
-	background-color: #c2e1ff;
+	background-color: #DDEEED;
 	border-radius: 10px;
 	box-shadow: 0 2px 5px 0 grey;
 }
@@ -79,6 +161,12 @@ input[type='checkbox'] {
 .top {
 	margin-bottom: 0px;
 }
+
+.next-button {
+	margin: auto;
+}
+
+
 
 @media (min-width: 0) and (max-width: 679px) {
 	header {
